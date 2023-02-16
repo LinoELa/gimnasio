@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    border: 5px solid #ffcc5c;
+}
+
+.container{
+    background: lightblue;
+    padding: 16px;
+    border: 4px solid blue; 
+    gap:8px; /* separar  */
+}
+
+.item{
+    background: peachpuff;
+    border: 4px solid salom;
+    height: 48px;
+    flex: 1;
+    padding: 4px;
+    text-align: center;
+}
+
+/* PAGINA DE AYUDA Y BUENA */
+
+/* https://www.internetingishard.com/html-and-css/flexbox/*/

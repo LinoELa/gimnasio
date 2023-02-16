@@ -1,0 +1,145 @@
+/* PAGINAS BUENAS  */
+/* https://flexbox.malven.co/ */
+/* https://www.internetingishard.com/html-and-css/flexbox/ */
+
+/* Ajustes primarios  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container{
+    color: #fff;
+    background-color: #5995DA; /* azul claro*/
+    padding: 20px 0; 
+
+}
+
+.menu{
+    border: 1px solid #fff; 
+    width: 900px;
+}
+
+/* Flexbox uses two types of boxes that
+ we’ve never seen before: “
+flex containers” and “flex items”. */
+
+/* The first step in using flexbox  
+is to turn one of our HTML elements into a flex container. 
+We do this with the display property */
+
+
+/* ALINEAR FLEX ITEMS */
+.menu-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* DISTRIBIR DEFERENTES FLEX ITEMS */
+.menu{
+    border: 1px solid #fff;
+    width: 900px; /*  ancho del menu*/
+    display: flex; /*decir el menu que es flex*/
+    justify-content: space-between;
+}
+
+/* AGRUPAR FLEX ITEMS */
+
+.links{
+    border: 1px solid #fff ;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login{
+    margin-left: 20px;
+}
+
+/* CROOS AXIS ALINEACION VERTIVAR HORIZONTAL */
+
+/* justify-content : alinear horizonal :   */
+/* align-items : alinear vertical  */
+
+.header-container{
+    color: #5995DA;
+    background-color: #d6e9fe;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    width: 900px;
+    height: 300px ;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.social , 
+.logo,
+.subscribe{
+    border: 1px solid #5995DA;
+}
+
+/* WRAPPING O ENVOLVER FLEX ITEMS */
+
+/* es muy importante para mantener los items dentro
+de un container y que sea algo responsive  */
+
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.photo-grid-item{
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.photo-grid{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* FLEX CONTAINER DIRECTION */
+
+/* row : filas */
+/* column : columnas */
+
+.photo-grid{
+    
+    align-items: center;
+}
+
+/*  CONSIDERACIN DE LA ALINEACION */
+
+/* ORDEN DE LOS ITEMS  */
+.first-item{
+    order: 1;
+}
+
+.last-item{
+    order: -1;
+}
+
+/* FLEX ITEM ALINEACION */
+
+.social,
+.subscribe{
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
